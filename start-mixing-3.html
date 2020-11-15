@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Start Mixing | Best Bitcoin Mixer |
+        SmartMixer.io</title>
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/material-icons.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/plugins.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/chat.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/custom.css" />
+    <link rel="icon" href="bundles/frontend/assets/images/favico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="bitcoin mixer, bitcoin tumbler, bitcoin anonymizer, anonymizer bitcoin, litecoin mixer, bitcoin cash mixer, smart mixer, crypto mixer, crypto tumbler, bitcoin laundry, Btc mix,crypto mixer, coin mix, bitcoin blender">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body class="loading">
+
+    <div class="pre-loader">
+        <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo">
+    </div>
+
+    <img class="header-effect1" src="bundles/frontend/assets/images/header/header-effect1.png" alt="header effect">
+    <img class="header-effect12" src="bundles/frontend/assets/images/header/header-effect12.png" alt="header effect">
+
+    <div id="support-modal" class="modal">
+        <div class="modal-content">
+
+            <div class="preloader-overlay hidden">
+                <div class="overlay"></div>
+                <div class="preloader-container">
+                    <div class="preloader-wrapper small active">
+                        <div class="spinner-layer spinner-green-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="center-align modal-header">
+                <img src="bundles/frontend/assets/images/icons/faqs.svg" alt="">
+                Leave us a message
+            </h4>
+            <form class="support-form" id="support-form" action="en/open-support/create-support-request" method="post">
+                <label for="support-name">
+                    Your Name :
+                </label>
+                <input type="text" name="support-name" id="support-name" autocomplete="name" required autofocus>
+                <label for="support-message">
+                    How Can We Help You ?
+                </label>
+                <textarea name="support-message" id="support-message" cols="130" rows="50" required></textarea>
+                <label for="file">
+                    Letter of Guarantee :
+                </label>
+                <input type="hidden" name="letter-content" id="letter-content" value="" />
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Upload</span>
+                        <input id="file-letter-support" type="file" accept=".json">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" id="file-path-validation-support"
+                            placeholder="Please attach your letter of guarantee">
+                    </div>
+                </div>
+                <button type="submit">
+                    <i class="material-icons">chat_bubble_outline</i>
+                    send message
+                </button>
+                <div id="support-error-out"></div>
+            </form>
+            <div class="support-form-success hidden">
+                <div class="check-mark">
+                    <i class="material-icons">check</i>
+                </div>
+
+                <p class="head"><img src="bundles/frontend/assets/images/support/support.svg" alt="Support">
+                    Your personal link to contact support</p>
+
+                <div class="support-link">
+                    <i class="material-icons">link</i>
+                    <a href="" target="_blank" id="support-target-link"></a>
+                </div>
+
+                <p class="underlined">👉 Please save the link for further communication with support service</p>
+            </div>
+        </div>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+
+    <!-- Start Header Section -->
+    <header data-scroll-index="1" class="main-header">
+
+        <!-- Start Nav Section -->
+        <nav class="main-nav">
+            <div class="nav-wrapper">
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light" href="whymix.html">Why Mixing</a></li>
+                    <li><a class="waves-effect waves-light" href="referral.html">Referral</a></li>
+                    <li><a class="waves-effect waves-light" href="fees.html">Fees</a></li>
+                    <li><a class="waves-effect waves-light" href="faq.html">FAQ</a></li>
+                    <li><a class="waves-effect waves-light" href="blog.html">Blog</a></li>
+                </ul>
+                <a href="index.html" class="brand-logo center">
+                    <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo"
+                        class="responsive-img">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <div class="very_small_hamburger" id="hamburger-menu">
+                        <svg viewBox="0 0 800 600">
+                            <path
+                                d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                class="top"></path>
+                            <path d="M300,320 L540,320" class="middle"></path>
+                            <path
+                                d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) ">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light hoverable tel-link" href="https://t.me/smartmixer"
+                            target="_blank"><img src="bundles/frontend/assets/images/header/telegram.svg"
+                                class="responsive-img telegram-icon" alt=""></a></li>
+                    <li>
+                        <a class="waves-effect waves-light hoverable modal-trigger" data-target="support-modal"
+                            id="support-btn">
+                            <img src="bundles/frontend/assets/images/icons/conversation2.svg" class="responsive-img"
+                                alt="English language">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger waves-effect waves-light hoverable" href="#!"
+                            data-target="dropdown1">
+                            <img src="bundles/frontend/assets/images/header/en.svg" class="responsive-img" alt="">
+                            EN<i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="cn/start-mixing">Chinese</a></li>
+                    <li><a href="de/start-mixing">German</a></li>
+                    <li><a href="en/start-mixing">English</a></li>
+                    <li><a href="es/start-mixing">Spanish</a></li>
+                    <li><a href="fr/start-mixing">French</a></li>
+                    <li><a href="it/start-mixing">Italian</a></li>
+                    <li><a href="jp/start-mixing">Japanese</a></li>
+                    <li><a href="kr/start-mixing">Korean</a></li>
+                    <li><a href="ru/start-mixing">Russian</a></li>
+                    <li><a href="tr/start-mixing">Turkish</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="" class="brand-logo">
+                    <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo"
+                        class="responsive-img">
+                </a>
+            </li>
+            <li><a class="sidenav-close" href="en/why-mixing">Why Mixing</a>
+            </li>
+            <li><a class="sidenav-close" href="en/referral">Referral</a>
+            </li>
+            <li><a class="sidenav-close" href="en/fees">Fees</a></li>
+            <li><a class="sidenav-close" href="en/faq">FAQ</a></li>
+            <li><a class="sidenav-close" href="en/blog-posts">Blog</a>
+            </li>
+            <li><a class="sidenav-close" href="en/start-mixing">Mixing</a></li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown2">
+                    <img src="bundles/frontend/assets/images/header/en.svg" class="responsive-img" alt="">
+                    EN<i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            <li>
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="cn/start-mixing">Chinese</a></li>
+                    <li><a href="de/start-mixing">German</a></li>
+                    <li><a href="en/start-mixing">English</a></li>
+                    <li><a href="es/start-mixing">Spanish</a></li>
+                    <li><a href="fr/start-mixing">French</a></li>
+                    <li><a href="it/start-mixing">Italian</a></li>
+                    <li><a href="jp/start-mixing">Japanese</a></li>
+                    <li><a href="kr/start-mixing">Korean</a></li>
+                    <li><a href="ru/start-mixing">Russian</a></li>
+                    <li><a href="tr/start-mixing">Turkish</a></li>
+                </ul>
+            </li>
+            <li><a class="sidenav-close modal-trigger" href="#" data-target="support-modal">
+                    <img src="bundles/frontend/assets/images/icons/conversation2.svg" class="responsive-img"
+                        alt="Conversation">
+                    Support</a></li>
+        </ul>
+
+        <!-- End Nav Section-->
+
+    </header>
+    <!-- End Header Section-->
+
+    <section class="mixer-container">
+
+        <div id="steps-header">
+            <div class="container mixer">
+                <div class="steps-header">
+                    <a class="step" data-step="1">
+                        <div class="image"></div>
+                        <p>Choose Currency</p>
+                    </a>
+                    <a class="step" data-step="2">
+                        <div class="image"></div>
+                        <p>Order Details</p>
+                    </a>
+                    <a class="step" data-step="3">
+                        <div class="image"></div>
+                        <p>Terms</p>
+                    </a>
+                    <a class="step" data-step="4">
+                        <div class="image"></div>
+                        <p>Send to Address</p>
+                    </a>
+                    <a class="step" data-step="5">
+                        <div class="image">
+                            <img class="finish-stars" src="bundles/frontend/assets/images/mixer/bar/clean.svg" alt="">
+                        </div>
+                        <p>Finish</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-container container" id="step-1">
+
+            <div class="mixer">
+
+                <div class="title step-title">
+                    <h5><img src="bundles/frontend/assets/images/mixer/one.svg" alt="" class="responsive-img"> Select
+                        your Currency
+                    </h5>
+                    <img class="title-image" src="bundles/frontend/assets/images/how/how-bg-line.png" alt="">
+                </div>
+
+                <div class="header-icons">
+                    <div id="output-step-1" style="display: none">
+                        <p class="warning"><i class="material-icons">warning</i>Your selected currency is currently not
+                            accepted, please select another currency.
+                        </p>
+                    </div>
+                    <div class="hoverable-shadow">
+                        <a data-currency="BTC" href="en/start-mixing?currency=btc"
+                            class="single-icon ad-add-cart-listener" data-prevent="true">
+                            <img src="bundles/frontend/assets/images/header/bitcoin-logo2.svg" alt="bitcoin logo">
+                            <p>Bitcoin</p>
+                        </a>
+                    </div>
+                    <div class="hoverable-shadow">
+                        <a data-currency="LTC" href="en/start-mixing?currency=ltc"
+                            class="single-icon ad-add-cart-listener" data-prevent="true">
+                            <img src="bundles/frontend/assets/images/header/litecoin.svg" alt="litecoin logo">
+                            <p>Litecoin</p>
+                        </a>
+                    </div>
+                    <div class="hoverable-shadow">
+                        <a data-currency="BCH" href="en/start-mixing?currency=bch"
+                            class="single-icon ad-add-cart-listener" data-prevent="true">
+                            <img src="bundles/frontend/assets/images/header/bitcoin-logo.svg" alt="bitcoin logo">
+                            <p>Bitcoin Cash</p>
+                        </a>
+                    </div>
+                    <div class="hoverable-shadow">
+                        <a data-currency="ETH" href="#" class="single-icon" data-prevent="true">
+                            <img src="bundles/frontend/assets/images/header/ethereum.svg" alt="ethereum logo">
+                            <p class="mb-0">Ethereum</p>
+                            <small>Soon</small>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="step-container container" id="step-2">
+
+            <div class="mixer">
+
+                <div class="title step-title" id="step-two-title">
+                    <h5><img src="bundles/frontend/assets/images/mixer/two.svg" alt="" class="responsive-img">
+                        <span>Receiver Address for&nbsp;<span id="currency-name">Bitcoin</span>&nbsp;the Clean
+                            Coins</span>
+                    </h5>
+                    <img class="title-image" src="bundles/frontend/assets/images/how/how-bg-line.png" alt="">
+                </div>
+
+                <form action="" id="mixer-form">
+                    <p class="warning"><i class="material-icons">warning</i>WARNING: For your own safety, Always check
+                        that you are visiting &nbsp;<a href="https://www.smartmixer.io">www.smartmixer.io</a>&nbsp; and
+                        not a scam website!
+                    </p>
+
+                    <div class="row">
+
+                        <div class="col s12 input-field mixer-code">
+                            <input type="text" id="mixerCode" placeholder="Optional">
+                            <label id="mixerCodeLabel" for="mixerCode" class="with-toolTip">Enter Smart Code : <img
+                                    src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                    class="responsive-img tooltipped" data-position="top"
+                                    data-tooltip="During the first order you will receive a unique SmartMixer code. Please keep this code and use it for all future mixing operations. Application of this code ensures you will not get back your old coins when using SmartMixer.io service in subsequent mixing.<br /><br />The same code will provide you with the membership in our loyalty discount system. Find out more in Fees and FAQ sections."
+                                    alt="Question Mark"></label>
+                            <p id="discount-amount">Discount</p>
+                        </div>
+
+                    </div>
+
+                    <div class="all-addresses">
+
+                        <label for="addressCode1" class="with-toolTip">Enter the Receiver Address : <img
+                                src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top"
+                                data-tooltip="Enter the Receiver Address, where the mixed coins should be sent. If you want to mix your own coins, enter your own Receiver Address. Note that the application of several addresses reinforces the anonymity."
+                                alt="Question Mark"></label>
+
+                        <div class="address-container">
+                            <div class="timer-container colored-details">
+                                <p id="address-percentage1" class="address-percentage">100%</p>
+                                <p><i class="material-icons">access_time</i> after
+                                    &nbsp;<span id="address-timer1" class="address-timer"> 17hr. 13min</span>
+                                </p>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="addressCode1" placeholder="Enter the Receiver Address here"
+                                    class="addressCode" required>
+                                <i id="add-address" class="material-icons">add_circle_outline</i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Start Service Slider -->
+                    <div class="slider-alpha-header">
+                        <p>- Service Fee: <img src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top"
+                                data-tooltip="Move the Service Fee slider to the desired value. We allow you to set the service fee down to tenths and thousandths of a percent. The higher the service fee, the better the pool used for the mixing process."
+                                alt="Question Mark"> <span class="reserve-percent" id="reserve-percent">3.7287%</span>
+                        </p>
+                        <p>- Pool Assignement: <img
+                                src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top"
+                                data-tooltip="<strong>Standard Pool</strong> - a basic pool operating under the 'Client <i class='fa fa-exchange'></i> Client' scheme. In this pool your coins will be mixed with incoming funds from other clients.<br />
+                            <br />
+                            <strong>Smart Pool</strong> - its reserves are formed from large-scale transactions of the 'Standard Pool', but additionally includes private reserves of SmartMixer and investors' coins. This enables a greater volume in the 'Smart Pool'.<br />
+                            <br />
+                            <strong>Stealth Pool</strong> - reserves of the 'Standard Pool' are completely excluded here. The 'Stealth Pool' includes only private reserves of SmartMixer and investors' coins.<br />
+                            <br />
+                            There is a difference in the application SmartMixer code for subsequent mixing from the reserves of the various pools. Additional information can be found in the FAQ section."
+                                alt="Question Mark"><span class="reserve-alpha">Smart Pool</span></p>
+                    </div>
+                    <div id="slider-reserve" class="main-slider">
+                        <span class="first"></span>
+                        <span class="last"></span>
+                    </div>
+                    <!-- Ent Service Slider -->
+
+                    <!-- Start Transfer Slider -->
+                    <div class="slider-alpha-header">
+                        <p id="percentage-distribution" class="with-toolTip">Percentage Distribution : <img
+                                src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top"
+                                data-tooltip="Move the slider 'Percentage Distribution', to determine how much percent you want to send to each respective address."
+                                alt="Question Mark"></p>
+                    </div>
+                    <div id="slider-transfer1" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer2" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer3" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer4" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer5" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer6" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer7" class="main-slider slider-transfer"></div>
+                    <div id="slider-transfer8" class="main-slider slider-transfer"></div>
+                    <!-- Ent Transfer Slider -->
+
+
+                    <!-- Start Delay Slider -->
+                    <div class="slider-alpha-header">
+                        <p id="transfer-delay" class="with-toolTip">Transfer Delay :
+                            <img src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top"
+                                data-tooltip="Move the slider 'Transfer delay', to determine when your coins shall be sent to the receiver address. We allow to set the 'Transfer Delay' precise to the minute instead of only hours. Also, the longer the delay period, the better."
+                                alt="Question Mark"></p>
+                    </div>
+                    <div id="slider-delay1" class="main-slider slider-delay"></div>
+                    <div id="slider-delay2" class="main-slider slider-delay"></div>
+                    <div id="slider-delay3" class="main-slider slider-delay"></div>
+                    <div id="slider-delay4" class="main-slider slider-delay"></div>
+                    <div id="slider-delay5" class="main-slider slider-delay"></div>
+                    <div id="slider-delay6" class="main-slider slider-delay"></div>
+                    <div id="slider-delay7" class="main-slider slider-delay"></div>
+                    <div id="slider-delay8" class="main-slider slider-delay"></div>
+                    <div id="slider-delay9" class="main-slider slider-delay"></div>
+                    <!-- Ent Delay Slider -->
+
+                    <!-- Start Strength Slider -->
+                    <div class="slider-alpha-header">
+                        <p id="transfer-strength" class="with-toolTip">Mixing Strength Meter : <img
+                                src="bundles/frontend/assets/images/icons/questions-circular-button.svg"
+                                class="responsive-img tooltipped" data-position="top" data-tooltip="Recommendations how to mix your Cryptos more effective
+                                              &lt;br /&gt;&lt;br /&gt;
+                                              &lt;table&gt;
+                                                &lt;tr&gt;
+                                                  &lt;td style=&#039;vertical-align: top&#039;&gt;&lt;i class=&#039;material-icons red-text tooltip-strength-meter-attr&#039; data-attr=&#039;severalReceivingAddress&#039; &gt;error&lt;/i&gt; &lt;/td&gt;
+                                                  &lt;td&gt; Enter more than one Receiver Address&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                  &lt;td style=&#039;vertical-align: top&#039;&gt;&lt;i class=&#039;material-icons green-text tooltip-strength-meter-attr&#039; data-attr=&#039;serviceFee&#039; &gt;check&lt;/i&gt; &lt;/td&gt;
+                                                  &lt;td&gt;  Do not set &#039;Service fee&#039; as minimum value&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                  &lt;td style=&#039;vertical-align: top&#039;&gt;&lt;i class=&#039;material-icons green-text tooltip-strength-meter-attr&#039; data-attr=&#039;transferDelay&#039;&gt;check&lt;/i&gt; &lt;/td&gt;
+                                                  &lt;td&gt;  Do not set &#039;Transfer delay&#039; as minimum value&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                  &lt;td style=&#039;vertical-align: top&#039;&gt;&lt;i class=&#039;material-icons green-text tooltip-strength-meter-attr&#039; data-attr=&#039;percentageSame&#039;  &gt;check&lt;/i&gt; &lt;/td&gt;
+                                                  &lt;td&gt; Percentage Distribution should not be set for each address the same&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                  &lt;td style=&#039;vertical-align: top&#039;&gt;&lt;i class=&#039;material-icons green-text tooltip-strength-meter-attr&#039; data-attr=&#039;transferDelaySame&#039;&gt;check&lt;/i&gt; &lt;/td&gt;
+                                                  &lt;td&gt;   Transfer Delays should not be the same&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                              &lt;/table&gt;
+                                              &lt;br /&gt;
+                                              Find out more details in our FAQ section." alt="Question Mark"></p>
+                    </div>
+                    <div id="slider-strength" class="main-slider slider-strength"></div>
+                    <!-- Ent Strength Slider -->
+                    <div style="display: none" id="strength-dom-helper">
+
+                    </div>
+
+                    <div class="center-align mixing-loader" id="step-3-request-loader" style="display: none">
+                        <img src="bundles/frontend/assets/images/mixer/checked.svg" alt="Check mark">
+                        <div class="lds-roller">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="mixer-footer center-align" id="step-3-request-submit">
+                        <h5 class="red-text form-error-msg hidden"><i class="material-icons">error</i> &nbsp;&nbsp;
+                            <span></span></h5>
+                        <button class="hoverable-shadow waves-effect waves-light" type="submit">
+                            <span>Continue</span> <i class="material-icons">chevron_right</i>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="step-container container" id="step-3">
+
+            <div class="mixer mixer-confirm">
+
+                <div class="title step-title">
+                    <h5><img src="bundles/frontend/assets/images/mixer/three.svg" alt="" class="responsive-img">Please
+                        read and agree with the following terms</h5>
+                    <img class="title-image" src="bundles/frontend/assets/images/how/how-bg-line.png" alt="">
+                </div>
+
+                <form action="" id="mixer-confirm-form">
+
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" name="terms" />
+                            <span><span class='bold'>I confirm</span> that the incoming address for transfer is only
+                                valid for 24 hours. If 24 hours are over, no further payments to this address will be
+                                accepted. <br> <span class='underlined'>I also know that only the first transfer will be
+                                    accepted for the mixing operation.</span> <br> Any additional transfer will be
+                                ignored by the system.</span></span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" name="terms" />
+                            <span><span class='bold'>I confirm </span> that the letter of guarantee needs be downloaded
+                                and verified before a transfer of coins to www.smartmixer.io.<span class='bold'>I also
+                                    confirm </span> that I have read and that I agree to the <a
+                                    href='%termsOfServiceLink%'>Terms of Service</a>.</span>
+                        </label>
+                    </p>
+
+                    <div class="mixer-footer center-align">
+                        <button class="hoverable-shadow waves-effect waves-light" type="submit">
+                            <img src="bundles/frontend/assets/images/how/button-bubbles.svg" alt="Bubbles"
+                                class="first">
+                            <span>Mix my Cryptos</span> <i class="material-icons">chevron_right</i>
+                            <img src="bundles/frontend/assets/images/how/button-bubbles.svg" alt="Bubbles"
+                                class="second">
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="step-container" id="calculator-container">
+            <hr class="calculator-hr">
+
+            <div class="container mixer">
+                <h4 class="calculator-header">Fee Calculator</h4>
+
+                <form action="" id="calculator-form" autocomplete="off">
+
+                    <div class="row">
+
+                        <div class="col s12 m4 input-field">
+                            <input type="number" id="sendAddress" placeholder="Enter your amount" required>
+                            <label id="send-address-label" for="sendAddress" class="with-toolTip">Amount to Send
+                                :</label>
+                        </div>
+
+                    </div>
+
+                    <div class="all-addresses">
+
+                        <label for="addressReceive1" class="with-toolTip">You Receive :</label>
+
+                        <div class="address-container">
+                            <div class="input-field">
+                                <input type="number" id="addressReceive1" placeholder="" class="addressCode" required>
+                            </div>
+                            <div class="timer-receive-container colored-details">
+                                <p><span class="currency-param">BTC</span> <span
+                                        class="address-receive-container">&nbsp;(&nbsp;<span class="address-receive"
+                                            id="address-receive1">100%</span>&nbsp;)&nbsp;</span>&nbsp;after
+                                    &nbsp;<span id="receive-timer1" class="receive-timer">17hr. 13min</span></p>
+                                <p id="calculator-to-address1">to: </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="calculator-footer">
+                        <p>Your personal fee is <span class="reserve-percent">3.7287%</span>&nbsp;&nbsp;<span
+                                id="currency-percentage"></span>&nbsp;<span class="currency-param"
+                                style="text-transform: uppercase">BTC</span>
+                            for each receiver address</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <input type="hidden" style="display: none;" id="mixture-order-request" value="en/start-mixing/create-order" />
+    <input type="hidden" style="display: none" id="trans-step2-after" value="after" />
+    <input type="hidden" style="display: none" id="trans-step2-to" value="to" />
+    <input type="hidden" style="display: none" id="trans-step2-placeholder-receiving-address"
+        value="Enter the Receiver Address here" />
+
+    <input type="hidden" style="display: none" id="minimumPercentageFee_btc" value="1" />
+    <input type="hidden" style="display: none" id="maximumPercentageFee_btc" value="5" />
+    <input type="hidden" style="display: none" id="feePerAddress_btc" value="0.00023225" />
+    <input type="hidden" style="display: none" id="minimumPercentageFee_bch" value="3" />
+    <input type="hidden" style="display: none" id="maximumPercentageFee_bch" value="10" />
+    <input type="hidden" style="display: none" id="feePerAddress_bch" value="0.00523225" />
+    <input type="hidden" style="display: none" id="minimumPercentageFee_eth" value="3" />
+    <input type="hidden" style="display: none" id="maximumPercentageFee_eth" value="10" />
+    <input type="hidden" style="display: none" id="feePerAddress_eth" value="0.01" />
+    <input type="hidden" style="display: none" id="minimumPercentageFee_ltc" value="1" />
+    <input type="hidden" style="display: none" id="maximumPercentageFee_ltc" value="10" />
+    <input type="hidden" style="display: none" id="feePerAddress_ltc" value="0.035" />
+
+
+    <!-- Start Footer Section -->
+    <footer data-scroll-index="9" class="main-footer main-section">
+        <img src="bundles/frontend/assets/images/mainIcon.gif" class="footer-logo" alt="Smart Mixer Logo">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col s12 l4 single-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Donation BTC</h6>
+                    </div>
+                    <div class="footer">
+                        <p class="scroll-x">33KK6erEfZq22LkXX8hD7nQUALjDs3nXwh</p>
+                    </div>
+                </div>
+                <div class="col s12 l4 single-field centered-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Official Tor mirror</h6>
+                    </div>
+                    <div class="footer">
+                        <p class="scroll-x"><a href="http://smrtmxdxognxhv64.onion/"
+                                target="_blank">smrtmxdxognxhv64.onion</a></p>
+                    </div>
+                </div>
+                <div class="col s12 l4 single-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Stay connected with us</h6>
+                    </div>
+                    <div class="social-footer footer">
+                        <p>
+
+                            <a href="cdn-cgi/l/email-protection#d4a7a1a4a4bba6a094a7b9b5a6a0b9bdacb1a6fabdbb"
+                                target="_blank"><img src="bundles/frontend/assets/images/footer/email_icon.png"
+                                    alt="support@smartmixer.io" style="width: 55px;height: 55px;"></a>
+                            <a href="https://t.me/smartmixer" target="_blank"><img
+                                    src="bundles/frontend/assets/images/footer/telegram2.svg" alt="Telegram Icon"
+                                    style="width: 50px;height: 50px;"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div>
+                    <a href="">Home</a>
+                    <a href="en/start-mixing">Start Mixing</a>
+                    <a href="en/referral">Referral</a>
+                    <a href="en/faq">FAQ</a>
+                    <a href="en/fees">Fees</a>
+                </div>
+                <div class="download-links">
+                    <p>SmartMixer App <span>Soon</span></p>
+                    <a href="#">
+                        <img src="bundles/frontend/assets/images/footer/playStore.png" alt="Play store Link"
+                            class="responsive-img hoverable">
+                    </a>
+                    <a href="#">
+                        <img src="bundles/frontend/assets/images/footer/appStore.png" alt="App store Link"
+                            class="responsive-img hoverable">
+                    </a>
+                </div>
+            </div>
+            <p class="copy-right">Copyright ⓒ 2019 <b>SmartMixer</b>
+                - All rights reserved</p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <div class="help-btn ad-add-cart-listener">
+        <a href="start-mixing.html"> Mix My Cryptos</a>
+    </div>
+
+    <!--Back to top button-->
+    <a href="#0" class="cd-top js-cd-top waves-effect waves-circle gradient-color hoverable"><i
+            class="material-icons">keyboard_arrow_up</i></a>
+    <input id="why-graph1" type="hidden" value="bundles/frontend/assets/images/why/why-graph1.png" />
+    <input id="why-graph2" type="hidden" value="bundles/frontend/assets/images/why/why-graph2.png" />
+    <input id="why-graph3" type="hidden" value="bundles/frontend/assets/images/why/why-graph3.png" />
+    <input id="why-mixing-text" type="hidden" value="Mixing" />
+    <input id="why-with-text" type="hidden" value="With Mixing" />
+    <input id="why-without-text" type="hidden" value="Without Mixing" />
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="bundles/frontend/assets/js/plugins.js"></script>
+    <script src="bundles/frontend/assets/js/wallet-address-validator.min.js"></script>
+    <script src="bundles/frontend/assets/js/clipboard.min.js"></script>
+    <script src="bundles/frontend/assets/js/main.js"></script>
+    <script src="bundles/frontend/assets/js/jquery.qrcode.js"></script>
+    <script src="bundles/frontend/assets/js/jquery.cookie.js"></script>
+    <script src="bundles/frontend/assets/js/slider.js"></script>
+    <script src="bundles/frontend/assets/js/chat.js"></script>
+    <script src="bundles/frontend/assets/js/custom.js"></script>
+</body>
+
+</html>

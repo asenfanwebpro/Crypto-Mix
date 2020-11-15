@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ | Best Bitcoin Mixer |
+        SmartMixer.io</title>
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/material-icons.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/plugins.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/chat.css" />
+    <link type="text/css" rel="stylesheet" href="bundles/frontend/assets/css/custom.css" />
+    <link rel="icon" href="bundles/frontend/assets/images/favico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="bitcoin mixer, bitcoin tumbler, bitcoin anonymizer, anonymizer bitcoin, litecoin mixer, bitcoin cash mixer, smart mixer, crypto mixer, crypto tumbler, bitcoin laundry, Btc mix,crypto mixer, coin mix, bitcoin blender">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+    <div class="pre-loader">
+        <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo">
+    </div>
+
+    <div id="support-modal" class="modal">
+        <div class="modal-content">
+
+            <div class="preloader-overlay hidden">
+                <div class="overlay"></div>
+                <div class="preloader-container">
+                    <div class="preloader-wrapper small active">
+                        <div class="spinner-layer spinner-green-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="center-align modal-header">
+                <img src="bundles/frontend/assets/images/icons/faqs.svg" alt="">
+                Leave us a message
+            </h4>
+            <form class="support-form" id="support-form" action="en/open-support/create-support-request" method="post">
+                <label for="support-name">
+                    Your Name :
+                </label>
+                <input type="text" name="support-name" id="support-name" autocomplete="name" required autofocus>
+                <label for="support-message">
+                    How Can We Help You ?
+                </label>
+                <textarea name="support-message" id="support-message" cols="130" rows="50" required></textarea>
+                <label for="file">
+                    Letter of Guarantee :
+                </label>
+                <input type="hidden" name="letter-content" id="letter-content" value="" />
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Upload</span>
+                        <input id="file-letter-support" type="file" accept=".json">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" id="file-path-validation-support"
+                            placeholder="Please attach your letter of guarantee">
+                    </div>
+                </div>
+                <button type="submit">
+                    <i class="material-icons">chat_bubble_outline</i>
+                    send message
+                </button>
+                <div id="support-error-out"></div>
+            </form>
+            <div class="support-form-success hidden">
+                <div class="check-mark">
+                    <i class="material-icons">check</i>
+                </div>
+
+                <p class="head"><img src="bundles/frontend/assets/images/support/support.svg" alt="Support">
+                    Your personal link to contact support</p>
+
+                <div class="support-link">
+                    <i class="material-icons">link</i>
+                    <a href="" target="_blank" id="support-target-link"></a>
+                </div>
+
+                <p class="underlined">👉 Please save the link for further communication with support service</p>
+            </div>
+        </div>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+
+    <!-- Start Header Section -->
+    <header data-scroll-index="1" class="main-header small-header"
+        style="background: url('bundles/frontend/assets/images/header/header-small-background.png') no-repeat center bottom; background-size: 100%">
+
+        <!-- Start Nav Section -->
+        <nav class="main-nav">
+            <div class="nav-wrapper">
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light" href="whymix.html">Why Mixing</a></li>
+                    <li><a class="waves-effect waves-light" href="referral.html">Referral</a></li>
+                    <li><a class="waves-effect waves-light" href="fees.html">Fees</a></li>
+                    <li><a class="waves-effect waves-light" href="faq.html">FAQ</a></li>
+                    <li><a class="waves-effect waves-light" href="blog.html">Blog</a></li>
+                </ul>
+                <a href="index.html" class="brand-logo center">
+                    <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo"
+                        class="responsive-img">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <div class="very_small_hamburger" id="hamburger-menu">
+                        <svg viewBox="0 0 800 600">
+                            <path
+                                d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                class="top"></path>
+                            <path d="M300,320 L540,320" class="middle"></path>
+                            <path
+                                d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) ">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light hoverable tel-link" href="https://t.me/smartmixer"
+                            target="_blank"><img src="bundles/frontend/assets/images/header/telegram.svg"
+                                class="responsive-img telegram-icon" alt=""></a></li>
+                    <li>
+                        <a class="waves-effect waves-light hoverable modal-trigger" data-target="support-modal"
+                            id="support-btn">
+                            <img src="bundles/frontend/assets/images/icons/conversation2.svg" class="responsive-img"
+                                alt="English language">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger waves-effect waves-light hoverable" href="#!"
+                            data-target="dropdown1">
+                            <img src="bundles/frontend/assets/images/header/en.svg" class="responsive-img" alt="">
+                            EN<i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="cn/faq">Chinese</a></li>
+                    <li><a href="de/faq">German</a></li>
+                    <li><a href="en/faq">English</a></li>
+                    <li><a href="es/faq">Spanish</a></li>
+                    <li><a href="fr/faq">French</a></li>
+                    <li><a href="it/faq">Italian</a></li>
+                    <li><a href="jp/faq">Japanese</a></li>
+                    <li><a href="kr/faq">Korean</a></li>
+                    <li><a href="ru/faq">Russian</a></li>
+                    <li><a href="tr/faq">Turkish</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="" class="brand-logo">
+                    <img src="bundles/frontend/assets/images/mainIcon.gif" alt="Smart Mixer Logo"
+                        class="responsive-img">
+                </a>
+            </li>
+            <li><a class="sidenav-close" href="en/why-mixing">Why Mixing</a>
+            </li>
+            <li><a class="sidenav-close" href="en/referral">Referral</a>
+            </li>
+            <li><a class="sidenav-close" href="en/fees">Fees</a></li>
+            <li><a class="sidenav-close" href="en/faq">FAQ</a></li>
+            <li><a class="sidenav-close" href="en/blog-posts">Blog</a>
+            </li>
+            <li><a class="sidenav-close" href="en/start-mixing">Mixing</a></li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown2">
+                    <img src="bundles/frontend/assets/images/header/en.svg" class="responsive-img" alt="">
+                    EN<i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            <li>
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="cn/faq">Chinese</a></li>
+                    <li><a href="de/faq">German</a></li>
+                    <li><a href="en/faq">English</a></li>
+                    <li><a href="es/faq">Spanish</a></li>
+                    <li><a href="fr/faq">French</a></li>
+                    <li><a href="it/faq">Italian</a></li>
+                    <li><a href="jp/faq">Japanese</a></li>
+                    <li><a href="kr/faq">Korean</a></li>
+                    <li><a href="ru/faq">Russian</a></li>
+                    <li><a href="tr/faq">Turkish</a></li>
+                </ul>
+            </li>
+            <li><a class="sidenav-close modal-trigger" href="#" data-target="support-modal">
+                    <img src="bundles/frontend/assets/images/icons/conversation2.svg" class="responsive-img"
+                        alt="Conversation">
+                    Support</a></li>
+        </ul>
+
+        <!-- End Nav Section-->
+
+        <section class="">
+
+            <div class="container">
+
+                <div>
+                    <div class="section-title">
+                        <img src="bundles/frontend/assets/images/icons/section-title.svg" alt="two lines">
+                        <h3>FAQ</h3>
+                        <p>Your questions answered</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+    <!-- End Header Section-->
+
+    <!-- Start News Section -->
+    <section data-scroll-index="6" class="main-section">
+
+        <div class="container">
+
+            <ul class="collapsible popout">
+
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>What is Smartmixer?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Smartmixer is a mixing service that enables cryptocurrency holders/users to afford
+                            complete anonymity. It is impossible for anyone to trace the connection between your old and
+                            new wallets.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>How do I use Smartmixer?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>1. Choose the desired currency you wish to mix.</span><br /><br />
+                        <span>2. Enter the destination address to receive the clean coins.</span><br /><br />
+                        <span>Smart Advice: Use more addresses for more anonymity</span><br /><br />
+                        <span>3. Set the percentage fee</span><br /><br />
+                        <span>Smart Advice: The higher the fee, the more anonymous you are.</span><br /><br />
+                        <span>4. Set the delay duration</span><br /><br />
+                        <span>Smart Advice: The longer the delay duration, the more anonymous the
+                            transaction.</span><br /><br />
+                        <span>5. Download the Letter of Guarantee.</span><br /><br />
+                        <span>6. Send the coins to the generated address.</span><br /><br />
+                        <span>7. Receive clean coins</span><br /><br />
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>What is a Smart Code?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>A Smart Code is a unique hash that is generated with your first mixing operation. This
+                            link is very important, because only with this, we can ensure that a person never receives
+                            his ever owned cryptocurrencies. Additionally, this link allows you to benefit from our
+                            Smart Loyalty Program. The more you mix with this link, the bigger the discounts on the
+                            fees. Just make sure to enter your Smart Code before every Mixing Operation.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>How many Confirmations
+                        are needed?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>The transaction will be approved after only 3 confirmations on the blockchain.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>How does it work?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Smartmixer has different types of mixing strategies as defined by the pools
+                            below.</span><br /><br />
+                        <span>Standard Pool:</span><br /><br />
+                        <span>Traditional and offers the basic type of mixing, where we mix your funds with incoming
+                            funds from other clients.</span><br /><br />
+                        <span>Smart Pool:</span><br /><br />
+                        <span>This pool uses three different sources of coins to cleanse your coins. We use parts of
+                            huge mixing amounts of the Standard Pool, private reserves of Smartmixer and funds from
+                            investors.</span><br /><br />
+                        <span>Stealth Pool:</span><br /><br />
+                        <span>The Stealth Pool isn&#039;t related in any way to coins of the Standard Pool. Instead, it
+                            relies only on reserves of Smartmixer and Coins from Investors. It is the safest method to
+                            mix your coins.</span><br /><br />
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>How anonymous am I when
+                        using Smartmixer?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Smartmixer afford you complete anonymity. The platform does not keep logs or user
+                            information such as deposit and withdrawal addresses permanently. Instead, this information
+                            resides in the servers only for as long as is technically necessary for the purposes of
+                            completing a transaction. All status pages are deleted alongside the transaction logs not
+                            more than 24 hours after a mixing operation. Alternatively, the user can delete this
+                            information soon after a transaction.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>What other possibilities
+                        do I have with Smartmixer?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>In addition to cleansing coins, you can use Smartmixer to send funds anonymously. For
+                            example, if you want to buy a product online and need to input personal data, like name,
+                            address and so on, Smartmixer makes it impossible for third parties to connect your ID with
+                            the address you are sending the funds from.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>Can I support/promote
+                        you?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Promoting Smartmixer is a win-win venture. We benefit from new customers who want to
+                            remain anonymous, and you get huge commissions of up to 70% on the fees that your referrals
+                            pay. We also offer you a lot of marketing materials to make it easier for you to
+                            advertise.</span><br /><br />
+                        <span>So, what are you waiting for? Convince others how important it is to stay anonymous. To
+                            start with our Referral Program</span><br /><br />
+                        <a href="en/referral">
+                            <h3>Click Here</h3>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>Can I use Smartmixer with
+                        Tor-Browser?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Of course you can! Smartmixer offers the highest form of privacy. To use Smartmixer on
+                            your Tor-Browser you can use the following link:</span><br />
+                        <a href="http://smrtmxdxognxhv64.onion/" target="_blank">
+                            <h6>smrtmxdxognxhv64.onion/</h6>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>How can you avoid a
+                        return of same coins when no data is saved?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>As mentioned, we do not save any data in our database, such as deposit and withdrawal
+                            addresses or transactions. Such information is only used as long as is technically necessary
+                            to complete a transaction and is automatically deleted after. To ensure that our users do
+                            not receive the same coins they have mixed earlier, Smartmixer uses a One-Way-Encryption
+                            process with hashing operations.</span><br /><br />
+                        <span>Different parameters will be utilized in order to calculate the hashes. The result of the
+                            one-way-encryption algorithm will be assigned to the smart code and cannot be deduced from
+                            our deposit address. Therefore, the smart code should be entered before each mixing
+                            operation.</span><br /><br />
+                        <span>Additionally, we assign our users one of several pools for each transaction. So, whenever
+                            the user has been already assigned a specific Pool for a transaction, he or she will receive
+                            withdrawals only from other pools of the same category that are managed internally in our
+                            system. Thus, we guarantee the highest security in just two steps and without loss of
+                            anonymity. Our users never receive the same coins mixed before with our
+                            service.</span><br /><br />
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i
+                            class="material-icons teal-text text-lighten-2">question_answer</i>Can I contact you?
+                    </div>
+                    <div class="collapsible-body">
+                        <span>If you have any problem, feel free to contact our support department. Make sure you attach
+                            the Letter of Guarantee, so we can process the ticket faster. We answer within 24
+                            hours.</span>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+    <!-- End News Section -->
+
+    <!-- Start Ready to mix Section -->
+    <section data-scroll-index="8" class="main-section ready-to-mix">
+        <h4>Do something for your Right</h4>
+        <div class="ready-btn-container">
+            <p>Be Smart, Be Anonymous</p>
+
+            <a class="mix-btn ad-add-cart-listener" href="start-mixing.html">
+                <h5>
+                    <span>Mix My Cryptos</span> <i class="material-icons">chevron_right</i>
+                </h5>
+            </a>
+
+        </div>
+    </section>
+    <!-- End Ready to mix Section -->
+
+    <!-- Start Footer Section -->
+    <footer data-scroll-index="9" class="main-footer main-section">
+        <img src="bundles/frontend/assets/images/mainIcon.gif" class="footer-logo" alt="Smart Mixer Logo">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col s12 l4 single-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Donation BTC</h6>
+                    </div>
+                    <div class="footer">
+                        <p class="scroll-x">33KK6erEfZq22LkXX8hD7nQUALjDs3nXwh</p>
+                    </div>
+                </div>
+                <div class="col s12 l4 single-field centered-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Official Tor mirror</h6>
+                    </div>
+                    <div class="footer">
+                        <p class="scroll-x"><a href="http://smrtmxdxognxhv64.onion/"
+                                target="_blank">smrtmxdxognxhv64.onion</a></p>
+                    </div>
+                </div>
+                <div class="col s12 l4 single-field">
+                    <div class="header">
+                        <img src="bundles/frontend/assets/images/footer/icon-circle.svg" alt="Circle Icon">
+                        <h6>Stay connected with us</h6>
+                    </div>
+                    <div class="social-footer footer">
+                        <p>
+
+                            <a href="cdn-cgi/l/email-protection#dba8aeababb4a9af9ba8b6baa9afb6b2a3bea9f5b2b4"
+                                target="_blank"><img src="bundles/frontend/assets/images/footer/email_icon.png"
+                                    alt="support@smartmixer.io" style="width: 55px;height: 55px;"></a>
+                            <a href="https://t.me/smartmixer" target="_blank"><img
+                                    src="bundles/frontend/assets/images/footer/telegram2.svg" alt="Telegram Icon"
+                                    style="width: 50px;height: 50px;"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div>
+                    <a href="">Home</a>
+                    <a href="en/start-mixing">Start Mixing</a>
+                    <a href="en/referral">Referral</a>
+                    <a href="en/faq">FAQ</a>
+                    <a href="en/fees">Fees</a>
+                </div>
+                <div class="download-links">
+                    <p>SmartMixer App <span>Soon</span></p>
+                    <a href="#">
+                        <img src="bundles/frontend/assets/images/footer/playStore.png" alt="Play store Link"
+                            class="responsive-img hoverable">
+                    </a>
+                    <a href="#">
+                        <img src="bundles/frontend/assets/images/footer/appStore.png" alt="App store Link"
+                            class="responsive-img hoverable">
+                    </a>
+                </div>
+            </div>
+            <p class="copy-right">Copyright ⓒ 2019 <b>SmartMixer</b>
+                - All rights reserved</p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <div class="help-btn ad-add-cart-listener">
+        <a href="start-mixing.html"> Mix My Cryptos</a>
+    </div>
+
+    <!--Back to top button-->
+    <a href="#0" class="cd-top js-cd-top waves-effect waves-circle gradient-color hoverable"><i
+            class="material-icons">keyboard_arrow_up</i></a>
+    <input id="why-graph1" type="hidden" value="bundles/frontend/assets/images/why/why-graph1.png" />
+    <input id="why-graph2" type="hidden" value="bundles/frontend/assets/images/why/why-graph2.png" />
+    <input id="why-graph3" type="hidden" value="bundles/frontend/assets/images/why/why-graph3.png" />
+    <input id="why-mixing-text" type="hidden" value="Mixing" />
+    <input id="why-with-text" type="hidden" value="With Mixing" />
+    <input id="why-without-text" type="hidden" value="Without Mixing" />
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="bundles/frontend/assets/js/plugins.js"></script>
+    <script src="bundles/frontend/assets/js/wallet-address-validator.min.js"></script>
+    <script src="bundles/frontend/assets/js/clipboard.min.js"></script>
+    <script src="bundles/frontend/assets/js/main.js"></script>
+    <script src="bundles/frontend/assets/js/jquery.qrcode.js"></script>
+    <script src="bundles/frontend/assets/js/jquery.cookie.js"></script>
+    <script src="bundles/frontend/assets/js/slider.js"></script>
+    <script src="bundles/frontend/assets/js/chat.js"></script>
+    <script src="bundles/frontend/assets/js/custom.js"></script>
+</body>
+
+</html>
